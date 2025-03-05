@@ -1,3 +1,5 @@
+#include "cdefs.h"
+
 #ifndef NODEBUG				/* NODEBUG inhibits debugging */
 #ifndef DEBUG				/* and if DEBUG not already defined */
 #ifndef MINSIZE				/* MINSIZE inhibits debugging */
@@ -17,7 +19,7 @@
 #define DB_PKT 5			/* Record a Kermit packet in log */
 #define DB_CLS 6			/* Close log */
 
-int dodebug(int, UCHAR *, UCHAR *, long); /* Prototype */
+void dodebug(int, UCHAR *, UCHAR *, long); /* Prototype */
 /*
   dodebug() is accessed throug a macro that:
    . Coerces its args to the required types.

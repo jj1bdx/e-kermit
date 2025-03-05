@@ -72,7 +72,7 @@ static FILE * ifile = (FILE *)0;	/* and pointers */
 static FILE * dp = (FILE *)0;		/* Debug log */
 static int xdebug = 0;			/* Debugging on/off */
 
-int
+void
 dodebug(int fc, UCHAR * label, UCHAR * sval, long nval) {
 
     if (fc != DB_OPN && !xdebug)
