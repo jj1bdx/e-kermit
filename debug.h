@@ -17,7 +17,7 @@
 #define DB_PKT 5			/* Record a Kermit packet in log */
 #define DB_CLS 6			/* Close log */
 
-void dodebug(int, UCHAR *, UCHAR *, long); /* Prototype */
+int dodebug(int, UCHAR *, UCHAR *, long); /* Prototype */
 /*
   dodebug() is accessed throug a macro that:
    . Coerces its args to the required types.
