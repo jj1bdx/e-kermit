@@ -38,6 +38,16 @@
   If parity is in effect, these routines must add it to outbound characters
   and strip it from inbound characters.
 */
+#ifdef __linux__
+#include <stdlib.h>
+#include <unistd.h>
+#endif /* __linux__ */
+
+#ifdef __APPLE__
+#include <stdlib.h>
+#include <unistd.h>
+#endif /* __APPLE__ */
+
 #include <stdio.h>
 #include <sys/stat.h>
 #include <time.h>
