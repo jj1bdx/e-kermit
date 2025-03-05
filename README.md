@@ -7,9 +7,14 @@ See <https://kermitproject.org/ek.html> for the details.
 * Currently adding all stuff on `main`
 * `v1.8`: original file tag
 
+## Testing status
+
+* Build tested on macOS 15.3.1 Apple Silicon
+* Build tested on Ubuntu 24.04.1 amd64
+
 ## On compilation warnings
 
-(Originally written in AAREADME.TXT)
+(Originally written in AAREADME.TXT by Frank da Cruz)
 
 ### E-KERMIT COMPILATION WARNINGS
 
