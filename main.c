@@ -44,10 +44,20 @@
 #include "debug.h"	/* Debugging */
 #include "platform.h"	/* Platform-specific includes and definitions */
 #include "kermit.h"	/* Kermit symbols and data structures */
-#ifdef __linux
+
+#ifdef __linux__
+#include <ctype.h>
 #include <errno.h>
 #include <stdlib.h>
-#endif /* __linux */
+#include <unistd.h>
+#endif /* __linux__ */
+
+#ifdef __APPLE__
+#include <ctype.h>
+#include <errno.h>
+#include <stdlib.h>
+#include <unistd.h>
+#endif /* __APPLE__ */
 
 /*
   Sample prototypes for i/o functions.
